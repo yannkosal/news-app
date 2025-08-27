@@ -8,7 +8,6 @@ import 'package:news_app/service/news.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
-
   @override
   State<Home> createState() => _HomeState();
 }
@@ -37,7 +36,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(244, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 241, 238, 238),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(top: 60, left: 20),
@@ -48,7 +47,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Phnom Penh",
+                    "Khmer",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
@@ -57,7 +56,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Text(
-                    " Post",
+                    "News",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.red,
@@ -69,10 +68,10 @@ class _HomeState extends State<Home> {
               ),
               SizedBox(height: 20),
               Text(
-                "News",
+                "Top Stories",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.red,
+                  color: Colors.black,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -185,10 +184,10 @@ class _HomeState extends State<Home> {
               ),
               SizedBox(height: 10),
               Text(
-                "Explore",
+                "Reader Favorites",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.red,
+                  color: Colors.black,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -210,9 +209,9 @@ class _HomeState extends State<Home> {
               ),
               SizedBox(height: 10),
               Text(
-                "Trending",
+                "For You",
                 style: TextStyle(
-                  color: Colors.red,
+                  color: Colors.black,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),

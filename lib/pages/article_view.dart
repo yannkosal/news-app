@@ -19,7 +19,7 @@ class _ArticleViewState extends State<ArticleView> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Phnom Penh",
+              "Khmer",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
@@ -28,7 +28,7 @@ class _ArticleViewState extends State<ArticleView> {
               ),
             ),
             Text(
-              " Post",
+              "News",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.red,

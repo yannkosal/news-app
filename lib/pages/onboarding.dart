@@ -38,7 +38,7 @@ class _OnboardingState extends State<Onboarding> {
                 children: [
                   SizedBox(height: 45),
                   Text(
-                    "The Phnom Penh Post\n Daily news from Cambodia",
+                    "Khmer News\n Daily news from Cambodia",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.red,

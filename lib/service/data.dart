@@ -6,22 +6,22 @@ List<CategoryModel> getCategories() {
   CategoryModel categoryModel = new CategoryModel();
 
   categoryModel.categoryName = "Business";
-  categoryModel.image = "images/news1.png";
+  categoryModel.image = "images/business.jpg";
   category.add(categoryModel);
   categoryModel = new CategoryModel();
 
   categoryModel.categoryName = "Entertainment";
-  categoryModel.image = "images/news1.png";
+  categoryModel.image = "images/entertainment.jpg";
   category.add(categoryModel);
   categoryModel = new CategoryModel();
 
   categoryModel.categoryName = "Science";
-  categoryModel.image = "images/news1.png";
+  categoryModel.image = "images/science.jpg";
   category.add(categoryModel);
   categoryModel = new CategoryModel();
 
   categoryModel.categoryName = "Sport";
-  categoryModel.image = "images/news1.png";
+  categoryModel.image = "images/sport.jpeg";
   category.add(categoryModel);
   categoryModel = new CategoryModel();
 
