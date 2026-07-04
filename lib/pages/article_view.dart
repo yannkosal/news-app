@@ -4,7 +4,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 class ArticleView extends StatefulWidget {
   String blogUrl;
 
-  ArticleView({required this.blogUrl});
+  ArticleView({super.key, required this.blogUrl});
 
   @override
   State<ArticleView> createState() => _ArticleViewState();

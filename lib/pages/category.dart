@@ -5,7 +5,7 @@ import 'package:news_app/service/show_category.dart';
 
 class Category extends StatefulWidget {
   String name;
-  Category({required this.name});
+  Category({super.key, required this.name});
 
   @override
   State<Category> createState() => _CategoryState();
@@ -21,7 +21,7 @@ class _CategoryState extends State<Category> {
     super.initState();
   }
 
-  getNews() async {
+  Future<void> getNews() async {
     ShowCategory showCategory = ShowCategory();
     await showCategory.getCategory(widget.name.toLowerCase());
     categories = showCategory.categories;
@@ -140,7 +140,7 @@ class CategoryTile extends StatelessWidget {
               ),
             ),
             SizedBox(height: 5),
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Text(
                 title!,
@@ -149,7 +149,7 @@ class CategoryTile extends StatelessWidget {
               ),
             ),
             SizedBox(height: 3),
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Text(
                 description!,

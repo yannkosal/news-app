@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     super.initState();
   }
 
-  getNews() async {
+  Future<void> getNews() async {
     News newsclass = News();
     await newsclass.getNews();
     articles = newsclass.news;
@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 5),
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 2.3,
                 child: ListView.builder(
                   physics: ClampingScrollPhysics(),
@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                                 SizedBox(height: 5),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.8,
                                   child: Text(
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                                 SizedBox(height: 5),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.8,
                                   child: Text(
@@ -193,7 +193,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 10),
-              Container(
+              SizedBox(
                 height: 120,
                 child: ListView.builder(
                   shrinkWrap: true,
@@ -217,7 +217,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 10),
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: ListView.builder(
                   padding: EdgeInsets.zero,
@@ -260,7 +260,7 @@ class _HomeState extends State<Home> {
                             ),
                             Column(
                               children: [
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.7,
                                   child: Text(
@@ -274,7 +274,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                                 SizedBox(height: 5),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.7,
                                   child: Text(
